@@ -1,0 +1,122 @@
+.header {
+    background-color: #5B359D;
+    height: 76px;
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        &--rect {
+            padding-left: 10px;
+            position: relative;
+            height: 40px;
+            width: 40px;
+        }
+        &--titre {
+            position: relative;
+            color: white;
+            font-family: 'Comic Neue', cursive;
+            font-size: 26px;
+            line-height: 36px;
+            font-weight: 400px;
+        }
+        &--vector {
+            position: relative;
+            height: 15px;
+            width: 15px;
+            padding-right: 10px;
+        }
+    }
+}
+.vector {
+    width: 100%;
+    height: 50px;
+    &__acc {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-size: 19px;
+        color: black;
+        text-decoration: none;
+    }
+}
+.head {
+    display: flex;
+    background: linear-gradient(90deg, rgba(0,0,0,0.34) 0%, rgba(0,0,0,0.34) 100%), url("../images/portail.png");
+    background-size: cover;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__rectangle {
+        display: flex;
+        background-color: #5B359D;
+        width: 250px;
+        height: 80px;
+        justify-content: space-between;
+        &--rect {
+            width: 40px;
+            height: 40px;
+            margin: auto;
+        }
+        &--p {
+            color: white;
+            margin: auto;
+        }
+    }
+    &__titre {
+        color: white;
+        font-family: 'Roboto';
+        font-style: bold;
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 481px){
+    .nav {
+        display: flex;
+        .header {
+            width: 50%;
+            &__nav {
+                justify-content:center;
+                &--rect {
+                    width: 25px;
+                    height: 25px;
+                }
+                &--titre {
+                    font-size: 18px;
+                }
+                &--vector {
+                    display: none;
+                }
+            }
+        }
+        .vector {
+            display: flex;
+            width: 50%;
+            &__acc {
+                &--acc {
+                    position: absolute;
+                    right : 100px;
+                    top: 30px;
+                    text-decoration: none;
+                    font-size: 15px;
+                    color: black;
+                }
+                &--con {
+                    position: absolute;
+                    right: 10px;
+                    top: 30px;
+                    text-decoration: none;
+                    font-size: 15px;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 769px){
+    .nav {
+        display: flex;
+        .header {
+            width: 30%;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.foot {
+    background-color: #5b359d;
+    display: flex;
+    flex-direction: column;
+    &__txt {
+        color: white;
+        height: 30px;
+        font-weight: bolder;
+        margin: 30px 50px;
+        text-align: center;
+    }
+    &__img {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+    &__li {
+        margin-left: 50px;
+        &__li ul{
+            color: rgba(255, 255, 255, 0.5);
+        }
+        &--acc, &--coo, &--pro {
+            color: white;
+        }
+    }
+    &--coo {
+        margin:0px 20px 0px 20px;
+    }
+    &--p {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .foot {
+        &__img {
+            display: flex;
+            justify-content: center;
+            &--twit, &--fb, &--insta {
+                margin: 10px 50px 10px 50px;
+            }
+        }
+        &__li {
+            display: flex;
+            justify-content: space-between;
+            &--acc, &--pro, &--coo {
+                width: 30%;
+                margin-top: 30px;
+            }
+            &--coo {
+                margin: 30px 40px 0px 20px;
+            }
+            &--pro {
+                margin-left: 70px;
+                margin-right: 80px;
+            }
+        }
+    }
+}

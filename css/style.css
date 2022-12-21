@@ -1,0 +1,235 @@
+.header {
+  background-color: #5B359D;
+  height: 76px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav--rect {
+  padding-left: 10px;
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+.header__nav--titre {
+  position: relative;
+  color: white;
+  font-family: "Comic Neue", cursive;
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 400px;
+}
+.header__nav--vector {
+  position: relative;
+  height: 15px;
+  width: 15px;
+  padding-right: 10px;
+}
+
+.vector {
+  width: 100%;
+  height: 50px;
+}
+.vector__acc {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 19px;
+  color: black;
+  text-decoration: none;
+}
+
+.head {
+  display: flex;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.34) 0%, rgba(0, 0, 0, 0.34) 100%), url("../images/portail.png");
+  background-size: cover;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.head__rectangle {
+  display: flex;
+  background-color: #5B359D;
+  width: 250px;
+  height: 80px;
+  justify-content: space-between;
+}
+.head__rectangle--rect {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
+.head__rectangle--p {
+  color: white;
+  margin: auto;
+}
+.head__titre {
+  color: white;
+  font-family: "Roboto";
+  font-style: bold;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 481px) {
+  .nav {
+    display: flex;
+  }
+  .nav .header {
+    width: 50%;
+  }
+  .nav .header__nav {
+    justify-content: center;
+  }
+  .nav .header__nav--rect {
+    width: 25px;
+    height: 25px;
+  }
+  .nav .header__nav--titre {
+    font-size: 18px;
+  }
+  .nav .header__nav--vector {
+    display: none;
+  }
+  .nav .vector {
+    display: flex;
+    width: 50%;
+  }
+  .nav .vector__acc--acc {
+    position: absolute;
+    right: 100px;
+    top: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+  }
+  .nav .vector__acc--con {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+  }
+}
+@media screen and (min-width: 769px) {
+  .nav {
+    display: flex;
+  }
+  .nav .header {
+    width: 30%;
+  }
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main {
+  text-align: center;
+}
+.main__p1 {
+  font-size: 25px;
+  margin: 50px;
+}
+.main__graph--img, .main__strat--img, .main__illu--img {
+  height: 60px;
+  width: 60px;
+  margin-top: 50px;
+}
+.main__graph--txt, .main__illu--txt, .main__strat--txt {
+  margin: auto 50px;
+}
+.main__p2 {
+  font-size: 26px;
+  margin: 50px;
+}
+.main__nom {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+@media screen and (min-width: 481px) {
+  .main__main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+  }
+  .main__graph, .main__strat, .main__illu {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .main__main {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+  .main__graph, .main__strat, .main__illu {
+    width: 30%;
+  }
+  .main__p2 {
+    font-size: 26px;
+    margin: 50px 150px;
+  }
+}
+.foot {
+  background-color: #5b359d;
+  display: flex;
+  flex-direction: column;
+}
+.foot__txt {
+  color: white;
+  height: 30px;
+  font-weight: bolder;
+  margin: 30px 50px;
+  text-align: center;
+}
+.foot__img {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.foot__li {
+  margin-left: 50px;
+}
+.foot__li__li ul {
+  color: rgba(255, 255, 255, 0.5);
+}
+.foot__li--acc, .foot__li--coo, .foot__li--pro {
+  color: white;
+}
+.foot--coo {
+  margin: 0px 20px 0px 20px;
+}
+.foot--p {
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 481px) {
+  .foot__img {
+    display: flex;
+    justify-content: center;
+  }
+  .foot__img--twit, .foot__img--fb, .foot__img--insta {
+    margin: 10px 50px 10px 50px;
+  }
+  .foot__li {
+    display: flex;
+    justify-content: space-between;
+  }
+  .foot__li--acc, .foot__li--pro, .foot__li--coo {
+    width: 30%;
+    margin-top: 30px;
+  }
+  .foot__li--coo {
+    margin: 30px 40px 0px 20px;
+  }
+  .foot__li--pro {
+    margin-left: 70px;
+    margin-right: 80px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

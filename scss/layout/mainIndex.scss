@@ -1,0 +1,52 @@
+.main {
+    text-align: center;
+    &__p1 {
+        font-size: 25px;
+        margin: 50px;
+    }
+    &__graph--img, &__strat--img, &__illu--img {
+        height: 60px;
+        width: 60px;
+        margin-top: 50px;
+    }
+    &__graph--txt, &__illu--txt, &__strat--txt {
+        margin: auto 50px;
+    }
+    &__p2 {
+        font-size: 26px;
+        margin: 50px;
+    }
+    &__nom {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.65);
+    }
+}
+
+@media  screen and (min-width: 481px) {
+    .main{
+        &__main {
+            display: flex;
+            flex-wrap: wrap;
+            width: 800px;
+            }
+        &__graph, &__strat, &__illu {
+            width: 300px;
+        }
+    }
+}
+@media screen and (min-width: 769px){
+    .main {
+        &__main {
+            display: flex;
+            justify-content: space-between;
+            width: auto;
+        }
+        &__graph, &__strat, &__illu {
+            width: 30%;
+        }
+        &__p2 {
+            font-size: 26px;
+            margin: 50px 150px;
+        }
+    }
+}
